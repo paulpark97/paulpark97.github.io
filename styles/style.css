@@ -115,7 +115,13 @@ img{
     margin-right:10%;
     border-radius: 10px;
 }
-
+section .second{
+    margin-left:5%;
+    font-size: 80px;
+}
+.mobile{
+    display:inline;
+}
 footer{
-    margin-top: 50%;
+    margin-top: 30%;
 }
