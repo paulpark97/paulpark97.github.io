@@ -80,12 +80,11 @@ body{
     display:flex;
     justify-content: center;
     margin-right:5%;
-    
+  
    
 }
-.nav .right a{
-    margin-right:3%;
-    
+.email,.about,.resume,.github{
+    margin-right:20px;
 }
 .nav .name{
     margin-left:2%;
