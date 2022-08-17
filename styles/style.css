@@ -147,6 +147,21 @@ nav {
 nav .name{
     
     margin-left: 50px;
+    animation:fade-in 1s;
+}
+
+.navList {
+    transform:scale(0);
+    animation: fade-in 1s forwards .5s;
+}
+@keyframes fade-in{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(100%);
+    }
+
 }
 nav ul {
     display:flex;
@@ -161,6 +176,12 @@ nav ul li {
 }
 li a {
     margin-right: 20px;
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover {
+    color:#CAF0F8AF;
 }
 
 
@@ -171,14 +192,31 @@ li a {
     color:#90E0EF;
     display:flex;
     flex-direction: row;
-    height:700px;
+    height:600px;
 }
+
 .full-name{
     font-size: 100px;
     color:#00B4D8;
     display:flex;
     flex-direction: row;
+    transform: translateX(-100%);
+    animation: slide-in 3s forwards .5s;
 }
+.intro-container div p{
+    transform: translateX(-200%);
+    animation: slide-in 3s forwards .5s;
+}
+
+@keyframes slide-in{
+    0%{
+        transform:translateX(-200%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+
 .introduction{
     font-size:30px;
 }
@@ -189,7 +227,33 @@ img{
     border-radius: 10px;
     margin-left:auto;
     margin-top:50px;
+    transform:translateX(100%) scale(0%) rotate(180deg);
+    animation: pop-in 1s forwards 2s;
 }
+
+@keyframes pop-in{
+    0%{
+        transform:translateX(100%) scale(0%) rotate(180deg);
+    }
+    100%{
+        transform:translateX(0%) scale(100%) rotate(0deg);
+    }
+}
+
+
+.about {
+    margin-left: 200px;
+}
+
+.about h2 {
+    font-size: 40px;
+    color:#00B4D8;
+}
+
+.about h2 + p {
+    font-size:30px;
+}
+
 footer{
     margin-top: 30%;
 }
